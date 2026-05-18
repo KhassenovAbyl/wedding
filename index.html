@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Айгерим и Абыл · 12 июля 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf7f2;
+    --ink: #2a2a2a;
+    --muted: #8a8275;
+    --accent: #b48a5c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+    font-weight: 300;
+  }
+  h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 400; }
+  section { padding: 80px 24px; max-width: 720px; margin: 0 auto; text-align: center; }
+  .hero { padding-top: 120px; }
+  .hero h1 { font-size: clamp(48px, 10vw, 96px); letter-spacing: 0.02em; }
+  .hero .amp { color: var(--accent); font-style: italic; display: block; margin: 8px 0; font-size: 0.6em; }
+  .hero .date { margin-top: 32px; letter-spacing: 0.3em; text-transform: uppercase; font-size: 14px; color: var(--muted); }
+  .divider { width: 60px; height: 1px; background: var(--accent); margin: 48px auto; }
+  h2 { font-size: 36px; margin-bottom: 8px; }
+  .label { letter-spacing: 0.2em; text-transform: uppercase; font-size: 12px; color: var(--muted); margin-bottom: 24px; }
+  .countdown { display: flex; justify-content: center; gap: 32px; margin-top: 24px; }
+  .countdown div { min-width: 64px; }
+  .countdown .num { font-family: 'Cormorant Garamond', serif; font-size: 48px; color: var(--accent); }
+  .countdown .unit { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
+  .schedule { text-align: left; max-width: 420px; margin: 32px auto 0; }
+  .schedule-item { display: flex; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid #e5dfd4; }
+  .schedule-item:last-child { border: none; }
+  .schedule-item .time { color: var(--accent); font-variant-numeric: tabular-nums; }
+  .btn {
+    display: inline-block; padding: 14px 36px; margin-top: 24px;
+    border: 1px solid var(--ink); color: var(--ink);
+    text-decoration: none; letter-spacing: 0.15em;
+    text-transform: uppercase; font-size: 12px;
+    transition: all 0.3s;
+  }
+  .btn:hover { background: var(--ink); color: var(--bg); }
+  form { max-width: 420px; margin: 32px auto 0; display: flex; flex-direction: column; gap: 16px; }
+  input, select {
+    padding: 14px 16px; border: 1px solid #d8d1c2; background: transparent;
+    font-family: inherit; font-size: 15px; color: var(--ink);
+  }
+  input:focus, select:focus { outline: none; border-color: var(--accent); }
+  footer { padding: 40px; text-align: center; color: var(--muted); font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <h1>Айгерим<span class="amp">&</span>Абыл</h1>
+  <p class="date">12 июля 2026 · Алматы</p>
+</section>
+
+<section>
+  <p class="label">До свадьбы осталось</p>
+  <div class="countdown" id="countdown">
+    <div><div class="num" id="d">0</div><div class="unit">дней</div></div>
+    <div><div class="num" id="h">0</div><div class="unit">часов</div></div>
+    <div><div class="num" id="m">0</div><div class="unit">минут</div></div>
+    <div><div class="num" id="s">0</div><div class="unit">секунд</div></div>
+  </div>
+  <div class="divider"></div>
+</section>
+
+<section>
+  <p class="label">Программа дня</p>
+  <h2>Расписание</h2>
+  <div class="schedule">
+    <div class="schedule-item"><span>Церемония</span><span class="time">16:00</span></div>
+    <div class="schedule-item"><span>Фотосессия</span><span class="time">17:00</span></div>
+    <div class="schedule-item"><span>Банкет</span><span class="time">18:30</span></div>
+    <div class="schedule-item"><span>Первый танец</span><span class="time">21:00</span></div>
+  </div>
+  <div class="divider"></div>
+</section>
+
+<section>
+  <p class="label">Место проведения</p>
+  <h2>Ritz-Carlton Almaty</h2>
+  <p style="color: var(--muted); margin-top: 8px;">пр. Аль-Фараби, 77/7</p>
+  <a class="btn" href="https://maps.google.com/?q=Ritz-Carlton+Almaty" target="_blank">Открыть карту</a>
+  <div class="divider"></div>
+</section>
+
+<section>
+  <p class="label">Просьба соблюдать</p>
+  <h2>Дресс-код</h2>
+  <p style="margin-top: 16px; color: var(--muted);">Классический. Палитра: бежевый, изумрудный, винный.</p>
+  <div class="divider"></div>
+</section>
+
+<section>
+  <p class="label">Подтверждение присутствия</p>
+  <h2>Будете с нами?</h2>
+  <p style="margin-top: 8px; color: var(--muted);">Просим ответить до 1 июля</p>
+  <form action="https://formspree.io/f/ТВОЙ_ID" method="POST">
+    <input type="text" name="name" placeholder="Ваше имя" required>
+    <select name="attendance" required>
+      <option value="">Сможете прийти?</option>
+      <option value="yes">Да, буду</option>
+      <option value="no">К сожалению, нет</option>
+    </select>
+    <input type="text" name="guests" placeholder="Количество гостей">
+    <button class="btn" type="submit">Отправить</button>
+  </form>
+</section>
+
+<footer>А & А · 12.07.2026</footer>
+
+<script>
+  const target = new Date('2026-07-12T16:00:00+06:00').getTime();
+  function tick() {
+    const diff = target - Date.now();
+    if (diff < 0) return;
+    document.getElementById('d').textContent = Math.floor(diff / 86400000);
+    document.getElementById('h').textContent = Math.floor(diff / 3600000) % 24;
+    document.getElementById('m').textContent = Math.floor(diff / 60000) % 60;
+    document.getElementById('s').textContent = Math.floor(diff / 1000) % 60;
+  }
+  tick(); setInterval(tick, 1000);
+</script>
+
+</body>
+</html>
