@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Айгерим и Абыл · 12 июля 2026</title>
+<title>Абылбек и Даяна · 29 июля 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -13,13 +13,57 @@
     --accent: #b48a5c;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { overflow-x: hidden; }
   body {
     font-family: 'Inter', sans-serif;
     background: var(--bg);
     color: var(--ink);
     line-height: 1.6;
     font-weight: 300;
+    position: relative;
+    min-height: 100vh;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 20% 0%, rgba(180, 138, 92, 0.12), transparent 60%),
+      radial-gradient(ellipse 70% 60% at 85% 30%, rgba(155, 120, 80, 0.10), transparent 60%),
+      radial-gradient(ellipse 90% 50% at 50% 100%, rgba(180, 138, 92, 0.10), transparent 60%),
+      linear-gradient(180deg, #faf7f2 0%, #f5efe4 50%, #faf7f2 100%);
+    background-attachment: fixed;
   }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(180, 138, 92, 0.18) 1px, transparent 1.5px);
+    background-size: 28px 28px;
+    opacity: 0.4;
+    mix-blend-mode: multiply;
+    z-index: 0;
+  }
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.7  0 0 0 0 0.55  0 0 0 0 0.35  0 0 0 0.08 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    opacity: 0.5;
+    mix-blend-mode: multiply;
+    z-index: 0;
+  }
+  section, footer { position: relative; z-index: 1; }
+  .ornament {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.35;
+    z-index: 0;
+  }
+  .ornament svg { width: 100%; height: 100%; display: block; }
+  .ornament-tl { top: 24px; left: -40px; width: 220px; height: 220px; transform: rotate(-15deg); }
+  .ornament-br { bottom: 80px; right: -40px; width: 240px; height: 240px; transform: rotate(160deg); }
+  .ornament-ml { top: 45%; left: -60px; width: 180px; height: 180px; transform: rotate(40deg); opacity: 0.25; }
+  .ornament-mr { top: 70%; right: -60px; width: 200px; height: 200px; transform: rotate(-30deg); opacity: 0.25; }
   h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 400; }
   section { padding: 80px 24px; max-width: 720px; margin: 0 auto; text-align: center; }
   .hero { padding-top: 120px; }
@@ -56,9 +100,49 @@
 </head>
 <body>
 
+<div class="ornament ornament-tl">
+  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#b48a5c" stroke-width="1.2" stroke-linecap="round">
+    <path d="M20 180 Q60 120 100 100 T180 20"/>
+    <path d="M50 150 Q40 140 35 125 Q55 130 60 145 Z" fill="#b48a5c" fill-opacity="0.15"/>
+    <path d="M80 120 Q70 110 65 95 Q85 100 90 115 Z" fill="#b48a5c" fill-opacity="0.15"/>
+    <path d="M110 95 Q100 85 95 70 Q115 75 120 90 Z" fill="#b48a5c" fill-opacity="0.15"/>
+    <path d="M140 65 Q130 55 125 40 Q145 45 150 60 Z" fill="#b48a5c" fill-opacity="0.15"/>
+    <circle cx="100" cy="100" r="6" fill="#b48a5c" fill-opacity="0.3"/>
+    <circle cx="160" cy="40" r="4" fill="#b48a5c" fill-opacity="0.3"/>
+  </svg>
+</div>
+
+<div class="ornament ornament-mr">
+  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#b48a5c" stroke-width="1.2" stroke-linecap="round">
+    <path d="M20 100 Q70 80 100 100 T180 100"/>
+    <path d="M40 95 Q35 80 45 70 Q55 80 50 95 Z" fill="#b48a5c" fill-opacity="0.12"/>
+    <path d="M80 92 Q75 75 90 68 Q98 82 90 95 Z" fill="#b48a5c" fill-opacity="0.12"/>
+    <path d="M120 102 Q125 118 115 128 Q105 118 110 102 Z" fill="#b48a5c" fill-opacity="0.12"/>
+    <path d="M155 100 Q160 85 175 88 Q172 102 160 105 Z" fill="#b48a5c" fill-opacity="0.12"/>
+  </svg>
+</div>
+
+<div class="ornament ornament-ml">
+  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#b48a5c" stroke-width="1" stroke-linecap="round">
+    <circle cx="100" cy="100" r="60" stroke-opacity="0.4"/>
+    <circle cx="100" cy="100" r="40" stroke-opacity="0.3"/>
+    <path d="M100 40 L100 160 M40 100 L160 100" stroke-opacity="0.2"/>
+  </svg>
+</div>
+
+<div class="ornament ornament-br">
+  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#b48a5c" stroke-width="1.2" stroke-linecap="round">
+    <path d="M20 180 Q60 120 100 100 T180 20"/>
+    <path d="M50 150 Q40 140 35 125 Q55 130 60 145 Z" fill="#b48a5c" fill-opacity="0.15"/>
+    <path d="M80 120 Q70 110 65 95 Q85 100 90 115 Z" fill="#b48a5c" fill-opacity="0.15"/>
+    <path d="M110 95 Q100 85 95 70 Q115 75 120 90 Z" fill="#b48a5c" fill-opacity="0.15"/>
+    <path d="M140 65 Q130 55 125 40 Q145 45 150 60 Z" fill="#b48a5c" fill-opacity="0.15"/>
+  </svg>
+</div>
+
 <section class="hero">
-  <h1>Айгерим<span class="amp">&</span>Абыл</h1>
-  <p class="date">12 июля 2026 · Алматы</p>
+  <h1>Абылбек<span class="amp">&</span>Даяна</h1>
+  <p class="date">29 июля 2026 · Алматы</p>
 </section>
 
 <section>
@@ -86,9 +170,9 @@
 
 <section>
   <p class="label">Место проведения</p>
-  <h2>Ritz-Carlton Almaty</h2>
-  <p style="color: var(--muted); margin-top: 8px;">пр. Аль-Фараби, 77/7</p>
-  <a class="btn" href="https://maps.google.com/?q=Ritz-Carlton+Almaty" target="_blank">Открыть карту</a>
+  <h2>Aisultan Plaza</h2>
+  <p style="color: var(--muted); margin-top: 8px;">Алматы</p>
+  <a class="btn" href="https://2gis.kz/almaty/firm/70000001041712972/77.049459%2C43.305557" target="_blank" rel="noopener">Открыть на карте</a>
   <div class="divider"></div>
 </section>
 
@@ -115,10 +199,10 @@
   </form>
 </section>
 
-<footer>А & А · 12.07.2026</footer>
+<footer>А & Д · 29.07.2026</footer>
 
 <script>
-  const target = new Date('2026-07-12T16:00:00+06:00').getTime();
+  const target = new Date('2026-07-29T16:00:00+05:00').getTime();
   function tick() {
     const diff = target - Date.now();
     if (diff < 0) return;
